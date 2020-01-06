@@ -33,6 +33,9 @@ Route::resource('computerlesson', 'ComputerLessonController');
 
 Route::resource('phpprogramming', 'PhPLessonController');
 
+// C++ Programming Route
+Route::resource('cplugprogramming', 'CplugProgrammingController');
+
 
 Route::get('/downloadpdf', 'SayadawPdfController@download');
 Route::get('post/tag/{tag}', 'HomeController@tag')->name('tag');
@@ -114,6 +117,9 @@ Route::resource('computer/lesson', 'ComputerLessonController');
 //Php Lesson Route
 
 Route::resource('php/programming', 'PhPLessonController');
+
+//C++ Programming Route
+Route::resource('programming/cplug', 'CplugProgrammingController');
 
 //Admin Auth Routes
 Route::get('admin-login', 'Auth\LoginController@showLoginForm')->name('admin.login');
