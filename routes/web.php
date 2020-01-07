@@ -35,6 +35,8 @@ Route::resource('phpprogramming', 'PhPLessonController');
 
 // C++ Programming Route
 Route::resource('cplugprogramming', 'CplugProgrammingController');
+//Android Lesson Route
+Route::resource('androidlesson', 'AndroidController');
 
 
 Route::get('/downloadpdf', 'SayadawPdfController@download');
@@ -120,6 +122,7 @@ Route::resource('php/programming', 'PhPLessonController');
 
 //C++ Programming Route
 Route::resource('programming/cplug', 'CplugProgrammingController');
+Route::resource('lesson/android', 'AndroidController');
 
 //Admin Auth Routes
 Route::get('admin-login', 'Auth\LoginController@showLoginForm')->name('admin.login');
